@@ -1,0 +1,4 @@
+1. I did not collaborate with any other students on this assignment.
+2. No not exactly but I know my code for FIFO_Scheduling() and PR_Scheduling() is certainly correct. 
+3. On FIFO_Scheduling I just followed the logic of the algorithm and for PF_Scheduling() I followed the logic of PR scheduling to sort the elements of the linked list then used FIFO_Scheduling within that function to take care of the rest. On SJF_Scheduling I followed it similar to FIFO_Scheduling but instead creating an int variable to represent minimum CPU burst and removed it from the PCB. For round robin I passed quantum by value as I found this was easiest.
+4. The challenges were mianly getting my round robin function to not print zero or have memory leakage and to figure out the logic of SJF in it's implementation. I actually this assignment was the most interesting but also the most challenging compared to the previous ones.

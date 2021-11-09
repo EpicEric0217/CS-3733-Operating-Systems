@@ -1,0 +1,5 @@
+There are many types of operating systems, some include:
+Batch Operating System: The instructions for a specific task was submitted to the system using punch cards. Punch cards with similar tasks to achieve were grouped together and an operator would put them in the system (huge mechanical devices) in batches to get the output.
+Time-sharing OS: Here, a single processor is able to share the time to let multiple users achieve a variety of tasks at the same time.
+Real-time OS: It is a type of OS which utilizes the physical time to handle real-time applications. For example, an OS made to keep in check the temperature of a chemical factory from time to time (maybe in the tenth of seconds).
+Network OS: This type of Operating System is meant to run on a Server. With this installed, the administrator can manage the data, users, applications, and other networking functions.

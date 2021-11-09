@@ -1,0 +1,56 @@
+hpg103@fox01:~/cs3733/assign01$ ./wordcount input_file_1.txt
+
+Child process for input_file_1.txt :number of words is 6
+
+1 files have been counted successfully!hpg103@fox01:~/cs3733/assign01$ ^C
+hpg103@fox01:~/cs3733/assign01$ ./wordcount input_file_1.txt input_file_2.txt
+
+Child process for input_file_1.txt :number of words is 6
+
+2 files have been counted successfully!
+2 files have been counted successfully!
+Main process created 3 child processes to count words in 2 files
+Child process for input_file_2.txt :number of words is 14
+2 files have been counted successfully!
+2 files have been counted successfully!hpg103@fox01:~/cs3733/assign01$ ^C
+hpg103@fox01:~/cs3733/assign01$ ./wordcount input_file_1.txt input_file_2.txt input_file_3.txt
+
+Child process for input_file_1.txt :number of words is 6
+
+3 files have been counted successfully!
+
+3 files have been counted successfully!3 files have been counted successfully!
+3 files have been counted successfully!3 files have been counted successfully!
+Main process created 4 child processes to count words in 3 files
+Child process for input_file_2.txt :number of words is 14
+
+3 files have been counted successfully!3 files have been counted successfully!
+3 files have been counted successfully!
+Main process created 4 child processes to count words in 3 files
+Child process for input_file_3.txt :number of words is 150
+3 files have been counted successfully!
+3 files have been counted successfully!hpg103@fox01:~/cs3733/assign01$ ^C
+hpg103@fox01:~/cs3733/assign01$ ./wordcount input_file_2.txt input_file_3.txt
+
+Child process for input_file_2.txt :number of words is 14
+
+2 files have been counted successfully!
+2 files have been counted successfully!
+Main process created 3 child processes to count words in 2 files
+Child process for input_file_3.txt :number of words is 150
+2 files have been counted successfully!
+2 files have been counted successfully!hpg103@fox01:~/cs3733/assign01$ ^C
+hpg103@fox01:~/cs3733/assign01$ ./wordcount input_file_1.txt input_file_3.txt   
+Child process for input_file_1.txt :number of words is 6
+
+2 files have been counted successfully!
+2 files have been counted successfully!
+Main process created 3 child processes to count words in 2 files
+Child process for input_file_3.txt :number of words is 150
+2 files have been counted successfully!
+2 files have been counted successfully!hpg103@fox01:~/cs3733/assign01$ ^C
+hpg103@fox01:~/cs3733/assign01$ ./wordcount input_file_4.txt
+input_file_4.txt :does not exists
+
+1 files have been counted successfully!hpg103@fox01:~/cs3733/assign01$ ^C
+

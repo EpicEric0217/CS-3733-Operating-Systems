@@ -1,0 +1,3 @@
+This line has only one space between the words.
+     This line    has  too     many     spaces    between the     words.   
+We want the second line to be formated as the first line.

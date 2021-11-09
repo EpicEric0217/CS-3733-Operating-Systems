@@ -1,0 +1,12 @@
+1. I did not collaborate with other students on this assignment.
+2. Mostly, except my allocation of 'pid', as I got an error message saying it 
+made an assignment to an integer to a pointer without a cast. 
+3.  Everything else is working, however when running wordcount with multiple
+input files, for example two, it prints the information for both input files
+seperately. Also there is the error message regarding the assignment of 
+pointer to integer without a cast. I tried different approaches to solve
+the problem of pointer to integer without a cast, however I didn't have much 
+luck, even if i tried integer to integer, i.e. 
+pid =(int)malloc((argc-1)*sizeof(int)); 
+4. The main challnege was trying to figure out how to cast the pid properly
+and the logic of the for loops printing everything twice.

@@ -1,0 +1,91 @@
+1. I did not collaborate with any other students on this assignment.
+
+2. Yes, although perhaps my C implementation of the solution isn't as effective as my Java implementation, as it took much longer to sort sublists 
+of significant size, even with two threads implemented. 
+
+3. All of my code for both the C and java implementation are functional, and as for the slowness of the C code, the only work around while still
+using C language would be to perhaps utilize more threads in the sorting phase before merging, as this would speed up the sorting time.
+
+4. I'd say not much could be done to make this assignment more interesting, as I find the topic of threads interesting as it is. As for the challenges, they varied between the two different
+implementations of the solution. When writing the C code I found the most challenging parts was figuring out that I needed to use the srand() and rand() for random number generation for 
+the arrays, figuring out I had to use atoi() on the first cmd line argument before storing it into N so as to be malloced for the arrays, and realizing I had to use a temporary variable
+to hold different values of the array at different indexes during the sorting of the sublists. As for the Java implementation, I'd have to say the most difficult part would be figuring out
+I had to use Integer.parseInt to convert the input string to an integer, and figuring out how to write the 'try/catch' blocks for the exceptions correctly. 
+
+5. Program output:
+
+hpg103@fox01:~/cs3733/assign04$ ./a.out 1000
+Sorting is done in 0.179000ms when two threads are utilized
+Sorting is done in 1.376000ms when one thread is utilized
+hpg103@fox01:~/cs3733/assign04$ ./a.out 5000
+Sorting is done in 16.228001ms when two threads are utilized
+Sorting is done in 32.160999ms when one thread is utilized
+hpg103@fox01:~/cs3733/assign04$ ./a.out 10000
+Sorting is done in 61.605999ms when two threads are utilized
+Sorting is done in 127.226997ms when one thread is utilized
+hpg103@fox01:~/cs3733/assign04$ ./a.out 20000
+Sorting is done in 262.847992ms when two threads are utilized
+Sorting is done in 511.015015ms when one thread is utilized
+hpg103@fox01:~/cs3733/assign04$ java ParallelSort 1000
+Sorting is done within 0.563808ms when two threads are utilized
+Sorting is done within 0.141348ms when one single thread is utilized
+hpg103@fox01:~/cs3733/assign04$ java ParallelSort 5000
+Sorting is done within 0.791758ms when two threads are utilized
+Sorting is done within 0.229198ms when one single thread is utilized
+hpg103@fox01:~/cs3733/assign04$ java ParallelSort 10000
+Sorting is done within 0.686426ms when two threads are utilized
+Sorting is done within 0.160809ms when one single thread is utilized
+hpg103@fox01:~/cs3733/assign04$ java ParallelSort 20000
+Sorting is done within 0.815663ms when two threads are utilized
+Sorting is done within 0.153611ms when one single thread is utilized
+
+Table:
+
+parallel_sort.c
+
+	size(N):			time(ms): 		# of threads used:
+	
+	1000				0.179000ms		two
+			
+					1.376000ms		one
+
+	5000				16.228001ms		two
+
+					32.160999ms		one
+
+	10000				61.605999ms		two
+
+					127.226997ms		one
+
+	20000				262.847992ms		two
+
+					511.015015ms		one
+
+ParallelSort.java
+
+	size(N):			time(ms): 		# of threads used:
+
+	1000				0.563808ms		two
+
+					0.141348ms		one
+
+	5000				0.791758ms		two
+
+					0.229198ms		one
+
+	10000				0.686426ms		two
+
+					0.160809ms		one
+
+	20000				0.815663ms		two
+
+					 0.153611ms		one
+
+Further comment:
+
+From these results it is apparent that for either implementations using two threads in the sorting stage drastically increases the effiency of sorting the two sublists, and the Java 
+implementation is much faster with extremely large input values, however using one thread appears to be faster, as opposed to C in which using threads two is more efficient. This is most 
+likely due to the fact of the JVM obscuring the process of the multithreading sorting, it takes longer for one thread to be allocated memory or clock time and then to switch to the other 
+thread. As for java being faster in general, this is most likely due to the overhead in my code caused by allocating clock time for each thread, the mallocing of the memory, and so on.
+
+

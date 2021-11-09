@@ -1,0 +1,4 @@
+1. I didn't collaborate with other students on this assignment.
+2. Yes albeit driver1.c might have some small issues
+3.driver2.c works perfectly although driver1.c was giving me trouble in reading in the cmd line arguments. I did get it to accept the number of command line arguments for each varibale type, however I wasn't able to figure out how to promptthe user to enter how cmd line arguments for each variable type. In the sample output I compiled driver1.c and myio.c with 'gcc myio.c driver1.c' and ran the executable with './a.out 2 2 2' so as to permit user input of 2 cmd line argumentsfor each variable type.  
+4. Challenges were remebering how to free memory and where to implement that.

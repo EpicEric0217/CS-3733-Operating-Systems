@@ -1,0 +1,22 @@
+please input an integer:
+Please input an integer
+2
+please input an integer:
+Please input an integer
+546
+please input a double:
+Please input a double
+2.0
+please input a double:
+Please input a double
+2.3
+please input a string:
+Please input a line
+hello there
+please input a string:
+Please input a line
+qedqed
+The largest integer is: 546
+The largest double is: 2.300000
+The longest string is: hello there
+
